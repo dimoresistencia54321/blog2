@@ -1,6 +1,6 @@
 
 from .settings import *
-
+import os
 
 
 DATABASES = {
@@ -13,3 +13,10 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+
+
+"""
+STATICFILES_DIRS = (
+    os.path.join(os.path.dirname(BASE_DIR), "static"),
+)
+"""

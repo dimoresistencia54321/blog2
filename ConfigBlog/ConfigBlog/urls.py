@@ -14,8 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    #path('', include('BlogApp.urls')),
+    #path('staff/', include('django.contrib.auth.urls')), # para el registro de usuario sin crear una clase o un formulario.
+    #path('staff/', include('staff.urls')),
 ]
